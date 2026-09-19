@@ -57,3 +57,106 @@ body {
     margin: 0 auto;
     padding: 0 20px 70px 20px;
 }
+
+/* sticky nav bar */
+.nav-tab-container {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: var(--shadow-md);
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--nav-dark);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    min-height: 52px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links a {
+    display: inline-block;
+    padding: 16px 26px;
+    color: #e2e8f0;
+    font-family: var(--font-heading);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.nav-links a:hover {
+    background-color: var(--nav-hover);
+    color: var(--accent-gold);
+}
+
+/* Project boxes grid */
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 26px;
+}
+
+.project-card {
+    flex: 1 1 calc(50% - 26px);
+    min-width: 280px;
+    background: #ffffff;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+}
+
+/* contact grid and form */
+.contact-grid {
+    display: flex;
+    gap: 40px;
+}
+
+.contact-details {
+    flex: 1 1 40%;
+}
+
+.contact-form-wrap {
+    flex: 1 1 60%;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 16px;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    font-family: var(--font-body);
+    font-size: 0.92rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent-blue);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
