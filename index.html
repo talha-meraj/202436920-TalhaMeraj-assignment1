@@ -151,5 +151,82 @@
                     </article>
                 </div>
             </section>
+
+            <!-- Section 3: Contact Form -->
+            <section id="contact" class="portfolio-section">
+                <div class="section-header">
+                    <h2 class="section-title"><i class="fas fa-envelope"></i> Contact Me</h2>
+                    <p class="section-subtitle">Feel free to reach out for questions, collaboration, or academic
+                        discussions.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Contact Details -->
+                    <div class="contact-details">
+                        <h3>Get In Touch</h3>
+                        <p>I would love to hear from you. Leave a message through the form or reach out directly using
+                            the details below:</p>
+                        <address class="contact-address-block">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <strong>Email:</strong><br>
+                                    <a href="mailto:m.talhameraj@gmail.com">m.talhameraj@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fab fa-linkedin"></i>
+                                <div>
+                                    <strong>LinkedIn:</strong><br>
+                                    <a href="https://www.linkedin.com/in/talha-meraj" target="_blank"
+                                        rel="noopener noreferrer">linkedin.com/in/talha-meraj</a>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-pin"></i>
+                                <div>
+                                    <strong>Location:</strong><br>
+                                    <span>KFUPM, Dhahran, Saudi Arabia</span>
+                                </div>
+                            </div>
+                        </address>
+                    </div>
+
+                    <!-- Contact Form with Name, Email, Message -->
+                    <div class="contact-form-wrap">
+                        <form id="contactForm" class="contact-form" action="#" method="POST" novalidate>
+                            <fieldset class="form-fieldset">
+                                <legend class="form-legend">Send a Message</legend>
+
+                                <div class="form-group">
+                                    <label for="name">Full Name <span class="required-star">*</span></label>
+                                    <input type="text" id="name" name="name" placeholder="e.g. Talha Meraj" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email">Email Address <span class="required-star">*</span></label>
+                                    <input type="email" id="email" name="email" placeholder="e.g. user@example.com"
+                                        required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="message">Message <span class="required-star">*</span></label>
+                                    <textarea id="message" name="message" rows="5"
+                                        placeholder="Write your message here..." required></textarea>
+                                </div>
+
+                                <button type="submit" class="btn-submit" id="submitBtn">
+                                    <i class="fas fa-paper-plane"></i> Send Message
+                                </button>
+
+                                <div id="formFeedback" class="form-feedback" role="alert"></div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+            </section>
         </main>
+        <script src="js/script.js"></script>
 </body>
+
+</html>
