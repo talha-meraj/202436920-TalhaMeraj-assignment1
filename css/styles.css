@@ -124,6 +124,52 @@ body {
     box-shadow: var(--shadow-md);
 }
 
+/* white card container */
+.main-card {
+    background-color: var(--card-bg);
+    box-shadow: var(--shadow-lg);
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    padding: 45px 50px;
+}
+
+/* Padding between sections */
+.portfolio-section {
+    padding: 35px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.portfolio-section:last-of-type {
+    border-bottom: none;
+    padding-bottom: 10px;
+}
+
+/* Section titles with blue icons */
+.section-header {
+    margin-bottom: 25px;
+}
+
+.section-title {
+    font-family: var(--font-heading);
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: #0f172a;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.section-title i {
+    color: var(--accent-blue);
+    font-size: 1.4rem;
+}
+
+.section-subtitle {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-top: 6px;
+}
+
 /* contact grid and form */
 .contact-grid {
     display: flex;
