@@ -12,6 +12,12 @@ A simple responsive personal portfolio website built as the starting point of my
 
 ---
 
+## Design Inspiration
+
+As suggested in the assignment file, I sought inspiration from this [portfolio website and design walkthrough](https://towardsdatascience.com/how-i-designed-my-own-data-science-portfolio-website-3d146ea6b6cd/) ([live sample](https://rohithteja.github.io/index.html)).
+
+---
+
 ## Setup Instructions (How to Run Locally)
 
 - Clone or download this repository to your computer.
