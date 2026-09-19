@@ -99,6 +99,54 @@ body {
     color: var(--accent-gold);
 }
 
+.nav-socials {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+    gap: 12px;
+}
+
+/* High-contrast greeting badge */
+.greeting-badge {
+    color: #1e2229;
+    background-color: #fef08a;
+    font-family: var(--font-heading);
+    font-size: 0.82rem;
+    font-weight: 800;
+    padding: 6px 14px;
+    border-radius: 20px;
+    border: 1px solid #fde047;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+    letter-spacing: 0.5px;
+    white-space: nowrap;
+}
+
+/* High-contrast social icon buttons */
+.nav-socials a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    background-color: rgba(255, 255, 255, 0.12);
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+/* Social icon hover effect */
+.nav-socials a:hover {
+    background-color: var(--accent-blue);
+    color: #ffffff;
+    border-color: var(--accent-blue);
+    transform: translateY(-2px);
+}
+
+
+
 /* Project boxes grid */
 .projects-grid {
     display: flex;
@@ -207,36 +255,6 @@ body {
     box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
 }
 
-.contact-details {
-    flex: 1 1 40%;
-}
-
-.contact-form-wrap {
-    flex: 1 1 60%;
-}
-
-.form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    margin-bottom: 16px;
-}
-
-.form-group input,
-.form-group textarea {
-    padding: 10px 12px;
-    border: 1px solid #cbd5e1;
-    border-radius: 4px;
-    font-family: var(--font-body);
-    font-size: 0.92rem;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: var(--accent-blue);
-    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
-}
 
 /*responsive breakpoint*/
 @media (max-width: 880px) {
@@ -280,7 +298,7 @@ body {
 
     .nav-socials {
         padding-right: 0;
-        margin-top: 4px;
+        margin-top: 6px;
     }
 
     .main-card {
