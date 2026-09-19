@@ -58,6 +58,30 @@ body {
     padding: 0 20px 70px 20px;
 }
 
+/* Hero banner header */
+.hero-banner {
+    text-align: center;
+    padding: 55px 20px 35px 20px;
+}
+
+.hero-title {
+    font-family: var(--font-heading);
+    font-size: 2.2rem;
+    font-weight: 900;
+    color: #ffffff;
+    letter-spacing: 1.5px;
+    margin-bottom: 8px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.hero-subtag {
+    color: #cbd5e1;
+    font-size: 0.95rem;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+}
+
 /* sticky nav bar */
 .nav-tab-container {
     position: sticky;
@@ -284,6 +308,10 @@ body {
 
     .hero-title {
         font-size: 1.5rem;
+    }
+
+    .hero-subtag {
+        font-size: 0.85rem;
     }
 
     .nav-bar {
