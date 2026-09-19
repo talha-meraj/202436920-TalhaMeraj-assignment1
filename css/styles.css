@@ -1,0 +1,59 @@
+/* Global styles & reusable variables */
+:root {
+    --font-heading: 'Montserrat', Arial, Helvetica, sans-serif;
+    --font-body: 'Open Sans', Arial, Helvetica, sans-serif;
+
+    --bg-dark: #0d1520;
+    --nav-dark: #1e2229;
+    --nav-hover: #2d323c;
+    --card-bg: #ffffff;
+    --text-main: #2b2e34;
+    --text-muted: #5f6368;
+    --border-color: #e2e8f0;
+    --accent-gold: #f59e0b;
+    --accent-blue: #2563eb;
+    --tag-bg: #f1f5f9;
+    --tag-color: #334155;
+
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.06);
+    --shadow-md: 0 10px 25px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 18px 32px rgba(0, 0, 0, 0.18);
+}
+
+/* Reset default sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* page settings */
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+/* main page style */
+body {
+    font-family: var(--font-body);
+    color: var(--text-main);
+    background-color: var(--bg-dark);
+    background-image:
+        linear-gradient(rgba(10, 17, 30, 0.72), rgba(10, 17, 30, 0.82)),
+        url('../assets/images/kfupm-bg.png');
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* center content and set width */
+.site-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px 70px 20px;
+}
